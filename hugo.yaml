@@ -1,0 +1,20 @@
+baseURL: ""
+languageCode: en-us
+title: Thoughts by Ezz
+theme: PaperMod
+
+params:
+  math: true
+
+
+menus:
+  main:
+  - name: Home
+    pageRef: /
+    weight: 10
+  - name: Blog
+    pageRef: /posts/
+    weight: 20
+  #- name: Photography
+  #  url: "https"
+  #  weight: 40
