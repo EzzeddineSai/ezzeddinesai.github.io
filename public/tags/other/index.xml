@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Other on Thoughts by Ezz</title>
+    <link>//localhost:1313/tags/other/</link>
+    <description>Recent content in Other on Thoughts by Ezz</description>
+    <generator>Hugo -- 0.143.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/other/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Post 3</title>
+      <link>//localhost:1313/posts/testpost3/</link>
+      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/testpost3/</guid>
+      <description>&lt;h3 id=&#34;this-is-a-katex-test-2&#34;&gt;This is a KaTex test 2&lt;/h3&gt;
+&lt;p&gt;$$E=mc^{4}$$&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

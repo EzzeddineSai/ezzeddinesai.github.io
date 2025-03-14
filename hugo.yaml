@@ -3,15 +3,23 @@ languageCode: en-us
 title: Thoughts by Ezz
 theme: PaperMod
 
+taxonomies:
+  tag: tags
+
 params:
   math: true
-
 
 menus:
   main:
   - name: Home
     pageRef: /
     weight: 10
+  
+
+  - identifier: tags 
+    name: Tags
+    url: /tags/
+    weight: 20
   #- name: Blog
   #  pageRef: /posts/
   #  weight: 20
