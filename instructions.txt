@@ -1,39 +1,48 @@
 - Install hugo using chocolatey
 - in the target file run hugo new site (name) -f yaml
 - download and copy over theme into themes
-- hugo.yaml
+- hugo.yaml is the config use the custom one here
 - posts go under content posts
 - _index.md is the homepage
-- use the config given below for a menue and such
 - use the following for katex https://mertbakir.gitlab.io/hugo/math-typesetting-in-hugo/
+    - put the following in layouts/partials extend_head.html to override it
+        {{ if or .Params.math .Site.Params.math }}
+        <!-- used when activated as a parameter in Hugo-->
+
+        <!-- from offical Katex -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+                onload="renderMathInElement(document.body);"></script>
+
+        <!-- for inline math -->
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+        });
+        </script>
+
+        {{ end }}
+
+
 - use "hugo server" to test
 
+- to host on github pages
+    - create local repo and a github repo.
+    - git add .
+    - git commit -m "first commit"
+    - git remote add origin (url)
+    - git push -u origin main 
+
+    - in github change Settings > Pages to github actions
+    - create a director .github/workflows and a file hugo.yaml and pase the code in https://gohugo.io/host-and-deploy/host-on-github-pages/
 
 
 
 
 
-use the following in layouts/partials extend_head.html to override it
-
-{{ if or .Params.math .Site.Params.math }}
-<!-- used when activated as a parameter in Hugo-->
-
-<!-- from offical Katex -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
-        onload="renderMathInElement(document.body);"></script>
-
-<!-- for inline math -->
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-        delimiters: [
-            {left: "$$", right: "$$", display: true},
-            {left: "$", right: "$", display: false}
-        ]
-    });
-});
-</script>
-
-{{ end }}

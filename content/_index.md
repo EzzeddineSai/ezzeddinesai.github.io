@@ -1,7 +1,6 @@
 ---
 title: "About Me"
 url: "/"
-layout: "single"
 ---
 
 Hi! I'm Ezzeddine AlSai, but you can call me Ezz.
