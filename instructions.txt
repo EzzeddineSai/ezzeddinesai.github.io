@@ -42,6 +42,7 @@
     - in github change Settings > Pages to github actions
     - create a director .github/workflows and a file hugo.yaml and pase the code in https://gohugo.io/host-and-deploy/host-on-github-pages/
     - add files and then push
+    - change the name of the repo to ezzeddinesai.github.io
 
 
 

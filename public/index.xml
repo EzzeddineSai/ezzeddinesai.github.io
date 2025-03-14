@@ -13,7 +13,7 @@
       <link>//localhost:1313/posts/testpost/</link>
       <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/posts/testpost/</guid>
-      <description>&lt;h2 id=&#34;this-is-a-katex-test&#34;&gt;This is a KaTex test&lt;/h2&gt;
+      <description>&lt;h3 id=&#34;this-is-a-katex-test&#34;&gt;This is a KaTex test&lt;/h3&gt;
 &lt;p&gt;$$E=mc^{2}$$&lt;/p&gt;</description>
     </item>
   </channel>
