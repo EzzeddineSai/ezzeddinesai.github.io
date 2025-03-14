@@ -4,6 +4,6 @@ date: 2025-02-09T00:00:00+00:00
 tags: [“Math”]
 ---
 
-### This is a KaTex test
+### This is a Math Test Post
 
-$$E=mc^{2}$$
+$$\pi_{3}(S^{2})=\{0\}$$

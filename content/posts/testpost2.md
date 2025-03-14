@@ -4,6 +4,6 @@ date: 2025-02-09T00:00:00+00:00
 tags: [“Math”, "Physics"]
 ---
 
-### This is a KaTex test 2
+### This is a MathPhys Test Page
 
-$$E=mc^{3}$$
+Did you know that $$E=mc^{3}$$??
