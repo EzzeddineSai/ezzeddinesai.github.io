@@ -1,8 +1,9 @@
 ---
-title: "Test Post"
-date: 2025-02-09T00:00:00+00:00
-tags: [“Math”]
+title: "Statistical Learning"
+tags: [Math, Machine Learning, Statistical Learning]
 ---
+
+I recently gave a talk about 
 
 ### This is a Math Test Post
 
